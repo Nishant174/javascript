@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- Q1 -->
+
+<!-- <script>
+
+let unit = prompt('enter the units: ')
+console.log(unit)
+
+let a
+
+if(unit <= 100){
+
+    a = unit*1
+    console.log(a)
+}
+
+else if (unit <= 200){
+
+a = unit*2
+console.log(a)
+}
+
+else{
+
+a = unit*3
+console.log(a)
+}
+
+
+
+
+
+</script> -->
+
+
+
+
+
+<!-- Q2 -->
+
+
+<!-- <script>
+
+function smallnumber(a, b, c, d) {
+    let smallest;
+
+    if (a <= b && a <= c && a <= d) {
+        smallest = a;
+    }
+    else if (b <= a && b <= c && b <= d) {
+        smallest = b;
+    }
+    else if (c <= a && c <= b && c <= d) {
+        smallest = c;
+    }
+    else {
+        smallest = d;
+    }
+
+    return smallest;
+}
+
+let num1 = prompt("Enter the first number: ");
+let num2 = prompt("Enter the second number: ");
+let num3 = prompt("Enter the third number: ");
+let num4 = prompt("Enter the fourth number: ");
+
+let smallestNumber = smallnumber(num1, num2, num3, num4);
+
+console.log(smallestNumber)
+
+
+</script> -->
+
+
+
+
+<!-- Q3 -->
+
+<!-- <script>
+
+function  largestnumber(a, b, c, d ,e) {
+    let  largest;
+
+    if (a >= b && a >= c && a >= d && a >= e) {
+        largest = a;
+    }
+    else if (b >= a && b >= c && b >= d && b >=e) {
+        largest = b;
+    }
+    else if (c >= a && c >= b && c >= d && c >=e) {
+        largest = c;
+    }
+    else if (d >= a && d >= b && d >= d && d >=e) {
+     largest = d;
+    }
+
+    else {
+        largest = e;
+    }
+
+    return largest;
+}
+
+let num1 = prompt("Enter the first number: ");
+let num2 = prompt("Enter the second number: ");
+let num3 = prompt("Enter the third number: ");
+let num4 = prompt("Enter the fourth number: ");
+let num5 = prompt("Enter the fivth number: ");
+
+let largestNumber = smallnumber(num1, num2, num3, num4 ,num5);
+
+console.log(largestNumber)
+
+</script> -->
+
+
+
+<!-- Q4 -->
+
+<!-- <script>
+
+    let a = prompt('enter the value:')
+    console.log(a)
+
+    if(a<0){
+        console.log('number is nagetive:')
+
+    }
+
+    else if(a>0){
+
+        console.log('number is positive:')
+    }
+
+    else{
+
+        console.log(' number is zero:')
+    }
+</script> -->
+
+
+<!-- Q5 -->
+
+<!-- <script>
+
+    
+function calculateGrade() {
+
+    let mark = prompt("Enter your score (0-100):"); 
+    hj;jh   
+     mark = Number(mark); 
+
+    let grmark
+    if (mark >= 90 && mark <= 100) {
+        grade = 'A';
+
+    } else if (mark >= 80 && mark < 90) {
+        grade = 'B';
+
+    } else if (mark >= 70 && mark < 80) {
+        grade = 'C';
+
+    } else if (mark >= 60 && mark < 70) {
+        grade = 'D';
+
+    } else if (mark >= 0 && mark < 60) {
+        grade = 'F';
+
+    } else {
+        grade = 'Invalid score. Please enter a number between 0 and 100.';
+    }
+
+    
+    alert(`Your grade is: ${grade}`);
+}
+
+
+calculateGrade();
+
+</script> -->
+
+
+<!-- Q6 -->
+
+<!-- <script>
+
+   
+function calculateTax() {
+    let income = prompt("Enter your income:");
+
+    income = Number(income); 
+
+    let taxRate;
+    let taxAmount;
+
+    if (income >= 0 && income <= 10000) {
+        taxRate = 5;
+
+    } else if (income >= 10001 && income <= 20000) {
+        taxRate = 10;
+
+    } else if (income >= 20001 && income <= 30000) {
+        taxRate = 15;
+
+    } else if (income >= 30001 && income <= 40000) {
+        taxRate = 20;
+
+    } else if (income > 40000) {
+        taxRate = 25;
+
+    } else {
+        alert("Invalid income. Please enter a valid positive number.");
+        return;
+    }
+
+   
+    taxAmount = (income * taxRate) / 100;
+
+    
+    alert(`For an income of $${income}, the tax rate is ${taxRate}%, and the tax amount is $${taxAmount.toFixed(2)}.`);
+}
+
+
+calculateTax();
+
+</script> -->
+
+<!-- Q7 -->
+
+<script>
+
+    
+function swapThreeNumbers() {
+    
+    let num1 = prompt("Enter the first number:");
+    let num2 = prompt("Enter the second number:");
+    let num3 = prompt("Enter the third number:");
+
+  
+    num1 = Number(num1);
+    num2 = Number(num2);
+    num3 = Number(num3);
+
+    alert(`Before swapping: num1 = ${num1}, num2 = ${num2}, num3 = ${num3}`);
+
+   
+    let temp = num1;
+    num1 = num2;
+    num2 = num3;
+    num3 = temp;
+
+    alert(`After swapping: num1 = ${num1}, num2 = ${num2}, num3 = ${num3}`);
+}
+
+
+swapThreeNumbers();
+
+</script>
