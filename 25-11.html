@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 25 - 11 - 2024 </title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<!-- Q1 -->
+
+<!-- <script>
+
+    const num1 = prompt (" Enter a value of the first number ")
+    const num2 = prompt (" Enter a value of the second number")
+    const num3 = prompt (" Enter a value of the third number")
+
+
+    const min = (num1 < num2 && num1 < num3 ) ? num1 : (num2 < num3 ? num2 : num3)
+
+    console.log("the min value is " + min)
+
+    alert(" the min value is " + min)
+
+
+</script> -->
+
+
+<!-- Q2 -->
+
+<!-- <script>
+
+function getGrade(marks) {
+
+  let grade;
+
+  switch (true) {
+    case marks >= 90:
+      grade = "A";
+      break;
+
+    case marks >= 80:
+      grade = "B";
+      break;
+
+    case marks >= 70:
+      grade = "C";
+      break;
+
+    case marks >= 60:
+      grade = "D";
+      break;
+
+    default:
+      grade = "F";
+  }
+  return grade;
+}
+
+
+let studentMarks = parseInt(prompt("Enter the student's marks:"));
+
+if (isNaN(studentMarks) || studentMarks < 0 || studentMarks > 100) {
+
+  console.log("Please enter a valid number between 0 and 100.");
+}
+ else {
+  console.log(`The grade is: ${getGrade(studentMarks)}`);
+}
+
+
+
+
+
+
+
+</script> -->
+
+<!-- Q3 -->
+
+
+<!-- <script>
+
+
+
+function getMonthDetails(monthNumber) {
+  let monthName, days;
+
+  switch (monthNumber) {
+    case 1:
+      monthName = "January";
+      days = 31;
+      break;
+
+    case 2:
+      monthName = "February";
+      days = 28; 
+      break;
+
+    case 3:
+      monthName = "March";
+      days = 31;
+      break;
+
+    case 4:
+      monthName = "April";
+      days = 30;
+      break;
+
+    case 5:
+      monthName = "May";
+      days = 31;
+      break;
+
+    case 6:
+      monthName = "June";
+      days = 30;
+      break;
+
+    case 7:
+      monthName = "July";
+      days = 31;
+      break;
+
+    case 8:
+      monthName = "August";
+      days = 31;
+      break;
+
+    case 9:
+      monthName = "September";
+      days = 30;
+      break;
+
+    case 10:
+      monthName = "October";
+      days = 31;
+      break;
+
+    case 11:
+      monthName = "November";
+      days = 30;
+      break;
+
+    case 12:
+      monthName = "December";
+      days = 31;
+      break;
+
+    default:
+      return "Invalid input! Please enter a number between 1 and 12.";
+  }
+
+  return `${monthName}, ${days} days.`;
+}
+let monthNumber = parseInt(prompt("Enter a month number (1-12):"));
+
+if (isNaN(monthNumber) || monthNumber < 1 || monthNumber > 12) {
+  console.log("Invalid input! Please enter a valid number between 1 and 12.");
+
+}
+
+else {
+  console.log(getMonthDetails(monthNumber));
+}
+
+
+</script> -->
+
+<!-- Q4-->
+
+<!-- <script>
+
+function aa(signalColor) {
+  let action;
+
+  switch (signalColor.toLowerCase()) { 
+    case "red":
+      action = "Stop";
+      break;
+
+
+    case "yellow":
+      action = "Get Ready";
+      break;
+
+    case "green":
+      action = "Go";
+      break;
+
+    default:
+      action = " enter Red, Yellow, or Green.";
+  }
+
+  return action;
+}
+
+
+let signalColor = prompt(" signal color (Red, Yellow, Green):");
+
+if (!signalColor) {
+  console.log("I enter a valid color.");
+
+} 
+else {
+  console.log(aa(signalColor));
+}
+
+</script> -->
+
+
+
+<!--  Q5 -->
+  <script>
+
+function aa(option) {
+  let response;
+
+  switch (option) {
+    case 1:
+      response = "english";
+      break;
+
+    case 2:
+      response = "hindi";
+      break;
+
+    case 3:
+      response = "gujarati";
+      break;
+
+    default:
+      response = " choose 1 for English, 2 for Hindi, or 3 for Gujarati.";
+  }
+
+  return response;
+}
+
+
+let b = parseInt(prompt("Welcome to Telecom Service.\nPress 1 for English\nPress 2 for Hindi\nPress 3 for Gujarati"));
+
+if (isNaN(b)) {
+  console.log("Invalid input! Please enter a valid number.");
+
+}
+
+else {
+  console.log(aa(b));
+}
+
+
+
+  </script>
