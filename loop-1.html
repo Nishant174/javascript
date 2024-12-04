@@ -1,0 +1,119 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+    <title>JavaScript Exercises</title>  
+    <style>  
+        body {  
+            margin: 20px;  
+        }  
+        .result {  
+            margin-top: 20px;  
+            padding: 15px;  
+            background-color: #f8f9fa;  
+            border: 1px solid #dee2e6;  
+        }  
+    </style>  
+</head>  
+<body>  
+
+<div class="container">  
+    <h2>JavaScript Exercises</h2>  
+
+    <div class="form-group">  
+        <label for="number">Enter a number:</label>  
+        <input type="number" id="number" class="form-control" placeholder="Enter a number">  
+    </div>  
+    <button onclick="countDigits()" class="btn btn-primary">Count Digits</button>  
+    <div id="countDigitsResult" class="result"></div>  
+
+    <div class="form-group">  
+        <label for="factorialNumber">Enter a number for Factorial:</label>  
+        <input type="number" id="factorialNumber" class="form-control" placeholder="Enter a number">  
+    </div>  
+    <button onclick="findFactorial()" class="btn btn-primary">Find Factorial</button>  
+    <div id="factorialResult" class="result"></div>  
+
+    <div class="form-group">  
+        <label for="reverseNumber">Enter a number to Reverse:</label>  
+        <input type="number" id="reverseNumber" class="form-control" placeholder="Enter a number">  
+    </div>  
+    <button onclick="reverseNumber()" class="btn btn-primary">Reverse Number</button>  
+    <div id="reverseResult" class="result"></div>  
+
+    <button onclick="countEvenNumbers()" class="btn btn-primary">Count Even Numbers (1-20)</button>  
+    <div id="evenCountResult" class="result"></div>  
+
+    <button onclick="countOddNumbers()" class="btn btn-primary">Count Odd Numbers (20-40)</button>  
+    <div id="oddCountResult" class="result"></div>  
+</div>  
+
+<script>  
+    function countDigits() {  
+        let number = document.getElementById('number').value;  
+        let count = 0;  
+
+        do {  
+            count++;  
+            number = Math.floor(number / 10);  
+        } while (number > 0);  
+
+        document.getElementById('countDigitsResult').innerText = Number of digits: ${count};  
+    }  
+
+    function findFactorial() {  
+        let number = Number(document.getElementById('factorialNumber').value);  
+        let factorial = 1, i = 1;  
+
+        while (i <= number) {  
+            factorial *= i;  
+            i++;  
+        }  
+
+        document.getElementById('factorialResult').innerText = Factorial: ${factorial};  
+    }  
+
+    function reverseNumber() {  
+        let number = document.getElementById('reverseNumber').value;  
+        let reversed = 0;  
+
+        while (number > 0) {  
+            let digit = number % 10;  
+            reversed = (reversed * 10) + digit;  
+            number = Math.floor(number / 10);  
+        }  
+
+        document.getElementById('reverseResult').innerText = Reversed Number: ${reversed};  
+    }  
+
+    function countEvenNumbers() {  
+        let count = 0, i = 1;  
+
+        do {  
+            if (i % 2 === 0) {  
+                count++;  
+            }  
+            i++;  
+        } while (i <= 20);  
+
+        document.getElementById('evenCountResult').innerText = Count of even numbers (1-20): ${count};  
+    }  
+
+    function countOddNumbers() {  
+        let count = 0, i = 20;  
+
+        while (i <= 40) {  
+            if (i % 2 !== 0) {  
+                count++;  
+            }  
+            i++;  
+        }  
+
+        document.getElementById('oddCountResult').innerText = Count of odd numbers (20-40): ${count};  
+    }  
+</script>  
+
+</body>  
+</html>
